@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <button onclick="abc()">open window</button>
+    <button onclick="xyz()">close window</button>
+    <!-- <button onclick="mnp()">move window</button> -->
+    <!-- <button onclick="lmn()">move window</button> -->
+    <button onclick="abcd()">resize window</button>
+    <button onclick="lmno()">move window</button>
+    <script>
+        function abc(){
+            var a = window.open("","","width=200px,height=200px,left=550px,top=50px");
+            a.document.write('Hi');
+            
+        }
+
+        function xyz(){
+            a.close()
+        }
+
+        function abcd(){
+            window.open("","","width=200px,height=200px,left=550px,top=50px").resizeTo(100,100);
+        }
+
+        function lmno(){
+            window.open("","","width=200px,height=200px,left=550px,top=50px").resizeBy(100,100);
+        }  // okay
+    </script>
+</body>
+</html>

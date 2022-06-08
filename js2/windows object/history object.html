@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Hi my name is nikunj</h1>
+
+    <button onclick="abc()">back</button>
+    <button onclick="xyz()">forward</button>
+    <button onclick="mnp()">go</button>
+
+    <script>
+        
+        function abc(){
+            history.back();
+        }
+
+        function xyz(){
+            history.forward();
+        }
+
+        function mnp(){
+            // history.go(-1);  // 1 back
+            history.go(1);  // 1 forward
+            // history.go(-2);  // 2 back
+        }
+
+    </script>
+</body>
+</html>
